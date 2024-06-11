@@ -15,7 +15,7 @@ jobs:
     - name: Install dependencies
       id: install_dependencies
       run: |
-        sudo apt update
+        sudo apt update -y
         sudo apt install -y opam zlib1g-dev pkg-config libgmp-dev z3 device-tree-compiler
         pip install pre-commit
 
